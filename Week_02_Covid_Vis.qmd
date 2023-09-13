@@ -34,8 +34,26 @@ covid_data_count |>
   filter(state == "MA") |> 
   ggplot(aes(x = date, y = Cases, color = race)) + geom_line()
 ```
+```{r}
+covid_data_count |> 
+  filter(state == "CA") |>
+  ggplot(aes(x = date, y = Deaths, color = race)) + geom_line()
+```
+ 
+
 
 1. Write code for a plot and describe what you observe?
+  
+  What I notice in this plot is that when observing the data for California, it can be seen that Latinx had     the highest number of deaths starting from as early as May compared to the other races and is a majority of the total deaths due to Covid in California. 
+  
 2. Are there any conclusions you can draw?
+
+  A conclusion I can draw that Latinx in California was the highest number of deaths in Covid compared to       other races which could lead to a factor of numerous things. This means that the Latinx population was affected more than any other race in the California state. The plot proves this by showing that as time passed on, the Latinx deaths increased to a higher amount than other races.
+  
 3. What were you not able to do due to not having the R knowledge?
-4. What other data would be useful to better understand this data?
+
+  I was not able to use the hospitalizations data column to see whether that also played a role in the deaths for each rate and whether there was a high hospitalization rate compared to number of deaths as well. I was just unsure of how to code it but with help I feel I would be able to see the relationship, if it exists, between hospitalizations and deaths for each race. 
+  
+4. What other data would be useful to better understand this data? 
+  
+  Other data that would be useful would be data on the vaccinations for each race and how many for each race    got vaccinated as well in California. This will put into perspective how many people are taking the vaccine and whether that has an effect on the number of deaths for each race or not in California. Not only this but also the amount of hospitalizations would be useful in understanding why the plot is shown from the data to be this way. This would be useful in understanding the plot because it would give perspective and establish a relationship if one exists, like said in problem 3. 
